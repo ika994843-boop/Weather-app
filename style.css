@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 340px;
+    background: #1e1e1e;
+    border-radius: 24px;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.top {
+    text-align: center;
+    padding: 24px 0;
+}
+
+.city {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #f0f0f0;
+}
+
+.temperature {
+    font-size: 64px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.temperature .cels {
+    font-size: 36px;
+    font-weight: 100;
+    color: #fff9;
+}
+
+.status {
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffd966;
+    margin-top: 4px;
+}
+
+.hourly_box {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    background: #222;
+    padding: 12px;
+    border-radius: 12px;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #222;
+}
+
+.hourly_box::-webkit-scrollbar {
+    height: 6px;
+}
+
+.hourly_box::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3px;
+}
+
+.hourly_elem {
+    min-width: 60px;
+    background: #2c2c2c;
+    border-radius: 12px;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease;
+}
+
+.hourly_elem:hover {
+    transform: translateY(-3px);
+}
+
+.hourly_elem .time {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.hourly_elem .degree {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.daily_box {
+    width: 100%;
+    max-height: 220px;
+    overflow-y: auto;
+    background: #222;
+    padding: 8px 12px;
+    border-radius: 12px;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #222;
+}
+
+.daily_box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.daily_box::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3px;
+}
+
+.daily_elem {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 8px;
+    border-bottom: 1px solid #444;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.daily_elem:hover {
+    background-color: #333;
+}
+
+.daily_elem .day {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.daily_elem .daily_degree {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header,
+main {
+    position: relative;
+    padding: 20px;
+}

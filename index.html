@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+     <video autoplay muted loop id="bg-video">
+        <source src="./media/sunny.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    <div class="box">
+        <div class="border">
+            <div class="top">
+                <p class="city">Samarkand</p>
+                <h1 class="temperature"></h1>
+                <p class="status">Snow</p>
+            </div>
+
+            <div class="hourly_box"></div>
+
+            <div class="daily_box"></div>
+        </div>
+    </div>
+</body>
+<script src="./main.js" type="module"></script>
+
+</html>
